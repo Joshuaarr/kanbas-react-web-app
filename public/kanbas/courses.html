@@ -1,55 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Courses List</title>
+    <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../vendors/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="navigation/index.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Courses lise</title>
-</head>
+  <body>
+    <div class="d-flex flex-row">
+      <!--Kanbas Navigation Side Bar-->
 
-<body>
-    <table valign="top" width="100%">
-        <tbody>
-            <tr valign="top">
-                <!--Kanbas Navigation Side Bar-->
-                <td>
-                    <ul>
-                        <li><a href="account.html">Account</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="courses.html">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                </td>
-                <!--Course Navigation Side Bar-->
-                <td>
-                    <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="#">Modules</a></li>
-                        <li><a href="#">Piazza</a></li>
-                        <li><a href="#">Zoom Meeting</a></li>
-                        <li><a href="assignments/index.html">Assignments</a></li>
-                        <li><a href="#">Quizzes</a></li>
-                        <li><a href="grade.html">Grades</a></li>
-                        <li><a href="#">People</a></li>
-                        <li><a href="#">Panopto Video</a></li>
-                        <li><a href="#">Discussions</a></li>
-                        <li><a href="#">Announcements</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Rubrics</a></li>
-                        <li><a href="#">Outcomes</a></li>
-                        <li><a href="#">Collaborations</a></li>
-                        <li><a href="#">Syllabus</a></li>
-                        <li><a href="settings/index.html">Settings</a></li>
-                    </ul>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</body>
-
+      <div class="wd-kanbas list-group wd-width-85px">
+        <a
+          href="https://www.northeastern.edu/"
+          class="list-group-item fs-1 text-danger"
+        >
+          N
+        </a>
+        <a href="account.html" class="list-group-item active">
+          <i class="fa fa-user-circle" style="color: gray"></i><br />
+          Account
+        </a>
+        <a href="dashboard/index.html" class="list-group-item">
+          <i class="fa fa-tachometer-alt"></i><br />
+          Dashboard
+        </a>
+        <a href="courses.html" class="list-group-item">
+          <i class="fa fa-book"></i><br />
+          Courses
+        </a>
+        <a href="#" class="list-group-item">
+          <i class="far fa-calendar-alt"></i><br />
+          Calendar
+        </a>
+        <a href="#" class="list-group-item">
+          <i class="fa fa-inbox"></i><br />
+          Inbox
+        </a>
+        <a href="#" class="list-group-item">
+          <i class="fa fa-history"></i><br />
+          History
+        </a>
+        <a href="#" class="list-group-item">
+          <i class="fa fa-desktop"></i><br />
+          Studio
+        </a>
+        <a href="#" class="list-group-item">
+          <i class="fa fa-sign-out-alt"></i><br />
+          Commons
+        </a>
+        <a href="#" class="list-group-item">
+          <i class="far fa-question-circle"></i><br />
+          Help
+        </a>
+      </div>
+      <!--Course Navigation Side Bar-->
+      <div class="mt-4">
+        <div class="wd-kanbas ml-25">
+          <h4>
+            <i class="fa fa-bars me-4" style="color: brown"></i>
+            Jose Annunziato
+            <hr />
+          </h4>
+        </div>
+        <div class="wd-kanbas ml-25">
+          <div class="wd-kanbas list-group wd-width-190px">
+            <a href="home.html" class="list-group-item white">Home</a>
+            <a href="#" class="list-group-item white">Modules</a></li>
+            <a href="#" class="list-group-item white">Piazza</a></li>
+            <a href="#" class="list-group-item white">Zoom Meeting</a>
+            <a href="assignments/index.html" class="list-group-item white">Assignments</a>
+            <a href="#" class="list-group-item white">Quizzes</a>
+            <a href="grade.html" class="list-group-item white">Grades</a>
+            <a href="#" class="list-group-item white">People</a></li>
+            <a href="#" class="list-group-item white">Panopto Video</a>
+            <a href="#" class="list-group-item white">Discussions</a>
+            <a href="#" class="list-group-item white">Announcements</a>
+            <a href="#" class="list-group-item white">Pages</a>
+            <a href="#" class="list-group-item white">Files</a>
+            <a href="#" class="list-group-item white">Rubrics</a>
+            <a href="#" class="list-group-item white">Outcomes</a>
+            <a href="#" class="list-group-item white">Collaborations</a>
+            <a href="#" class="list-group-item white">Syllabus</a>
+            <a href="settings/index.html" class="list-group-item white">Settings</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
