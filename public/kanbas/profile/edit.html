@@ -1,109 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Account Home</title>
+    <link rel="stylesheet" href="../../vendors/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../../vendors/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="../navigation/index.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Edit Profile</title>
-</head>
+  <body>
+    <div class="d-flex flex-row">
+      <!--Kanbas Navigation Side Bar-->
 
-<body>
-    <table valign="top" width="100%">
-        <tbody>
-            <tr valign="top">
-                <!--Kanbas Navigation Side Bar-->
-                <td>
-                    <ul>
-                        <li><a href="account.html">Account</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="courses.html">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                </td>
-                <!--Course Navigation Side Bar-->
-                <td>
-                    <ul>
-                        <li><a href="#">Notifications</a></li>
-                        <li><a href="index.html">Profile</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Settings</a></li>
-                        <li><a href="#">ePortfolios</a></li>
-                        <li><a href="#">Shared Content</a></li>
-                        <li><a href="#">The Hub</a></li>
-                        <li><a href="#">Qwickly Course Tools</a></li>
-                        <li><a href="#">Global Announcements</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <h2><label>Jose Annunziato's Profile</label></h2>
-                    <label for="edit-profile-name">Name:*</label>
-                    <input id="edit-profile-name" placeholder="Jose Annunziato" />
-                    <label for="edit-profile-pronouns">Pronouns:</label>
-                    <input id="edit-profile-pronouns" placeholder="None" /><br />
-                    <br />
+      <div class="wd-kanbas list-group wd-width-85px">
+        <a
+          href="https://www.northeastern.edu/"
+          class="list-group-item fs-1 text-danger"
+        >
+          N
+        </a>
+        <a href="../account.html" class="list-group-item active">
+          <i class="fa fa-user-circle" style="color: gray"></i><br />
+          Account
+        </a>
+        <a href="#" class="list-group-item">
+          <i class="fa fa-tachometer-alt"></i><br />
+          Dashboard
+        </a>
+        <a href="../courses.html" class="list-group-item">
+          <i class="fa fa-book"></i><br />
+          Courses
+        </a>
+        <a href="#" class="list-group-item">
+          <i class="far fa-calendar-alt"></i><br />
+          Calendar
+        </a>
+        <a href="#" class="list-group-item">
+          <i class="fa fa-inbox"></i><br />
+          Inbox
+        </a>
+        <a href="#" class="list-group-item">
+          <i class="fa fa-history"></i><br />
+          History
+        </a>
+        <a href="#" class="list-group-item">
+          <i class="fa fa-desktop"></i><br />
+          Studio
+        </a>
+        <a href="#" class="list-group-item">
+          <i class="fa fa-sign-out-alt"></i><br />
+          Commons
+        </a>
+        <a href="#" class="list-group-item">
+          <i class="far fa-question-circle"></i><br />
+          Help
+        </a>
+      </div>
+      <!--Course Navigation Side Bar-->
+      <div class="mt-4">
+        <div class="wd-kanbas ml-25">
+          <h4>
+            <i class="fa fa-bars me-4" style="color: brown"></i>
+            Jose Annunziato's Profile
+            <hr />
+          </h4>
+        </div>
+        <div class="wd-kanbas ml-25 d-flex flex-row">
+          <div class="wd-kanbas list-group wd-width-190px">
+            <a href="#" class="list-group-item white">Notifications</a>
 
-                    <label for="edit-profile-title">Title:</label>
-                    <input id="edit-profile-title" />
+            <a href="index.html" class="list-group-item white active"
+              >Profile</a
+            >
 
+            <a href="#" class="list-group-item white">Files</a>
+            <a href="#" class="list-group-item white">Settings</a>
 
-                    <h3>Contact</h3>
-                    No registered services, you can add some on the <a href="#">settings</a> page.
+            <a href="#" class="list-group-item white">ePortfolios</a>
 
-                    <h3>Biography</h3>
-                    Faculty, SWE, AI, Space, and renewable enthusiast.
-                    <form id="edit-profile-biography">
-                        <textarea cols="40" rows="3">Faculty, SWE, AI, Space, and renewable enthusiast.</textarea>
-                    </form><br />
-                    
+            <a href="#" class="list-group-item white">Shared Content</a>
 
-                    <h3>Links</h3>
-                    <ul>
-                        <li>
-                            <a href="#">YouTube</a> Links to an external site
-                        </li>
-                    </ul>
-                    <h4>
-                    &emsp;&emsp;&emsp;
-                    <label for="edit-profile-links-title">Title</label>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    <label for="edit-profile-links-url">URL</label>
-                    </h4>
-                    <input id="edit-profile-links-title" placeholder="Youtube" />
-                    ->
-                    <input id="edit-profile-links-url" placeholder="https://www.youtube.com" />
-                    <a href="#">Remove</a>
+            <a href="#" class="list-group-item white">The Hub</a>
 
-                    <br />
-                    <a href="#">
-                        <input type="button" id="edit-profile-add-another-link" value="Add another link" />
-                    </a><br />
+            <a href="#" class="list-group-item white">Qwickly Course Tools</a>
 
-                    <a href="#">
-                        <input type="button" id="edit-profile-cancel" value="Cancel" /></a>
-                    
-                    <a href="index.html">
-                        <input type="button" id="edit-profile-save-profile" value="Save Profile" /></a><br />
-                    
-                    <a href="#"><input type="button" id="edit-profile-edit-profile" value="Edit Profile" /></a>
-                    
-                    <a href="index.html"><input type="button" id="edit-profile-cancel-editing" value="Cancel Editing" /></a>
+            <a href="#" class="list-group-item white">Global Announcements</a>
+          </div>
+          <div class="ms-5">
+            <div class="d-flex justify-content-between align-items-start">
+              <!-- Edit Profile Button -->
+              <i
+                class="fa fa-user-circle fa-6x"
+                style="color: rgb(190, 188, 188)"
+              ></i>
+              <a href="index.html" class="p-2">
+                <button
+                  class="btn btn-primary"
+                  style="
+                    background-color: rgb(190, 188, 188);
+                    color: black;
+                    border: none;
+                  "
+                >
+                  <i class="fa fa-pencil-alt fa-flip-horizontal"></i>
+                  Cancel Editing
+                </button>
+              </a>
+            </div>
 
-                    <br />
-                
+            <label for="edit-profile-name">Name:*</label>
+            <br />
+            <input id="edit-profile-name" placeholder="Jose Annunziato" />
+            <br />
+            <label for="edit-profile-pronouns">Pronouns:</label>
+            <br />
+            <input id="edit-profile-pronouns" placeholder="None" /><br />
+            <label for="edit-profile-title">Title:</label><br />
+            <input id="edit-profile-title" />
+            <br />
+            <br />
+            <h3>Contact</h3>
+            No registered services, you can add some on the
+            <a href="#" class="wd-kanbas link-to">settings</a> page.
 
+            <h3>Biography</h3>
+            Faculty, SWE, AI, Space, and renewable enthusiast.
+            <form id="edit-profile-biography">
+              <textarea cols="40" rows="3">
+Faculty, SWE, AI, Space, and renewable enthusiast.
+              </textarea>
+            </form>
+            <br />
 
+            <h3>Links</h3>
 
+            <h4>
+              &emsp;&emsp;&emsp;
+              <label for="edit-profile-links-title">Title</label>
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+              <label for="edit-profile-links-url">URL</label>
+            </h4>
+            <input id="edit-profile-links-title" placeholder="Youtube" />
+            ->
+            <input
+              id="edit-profile-links-url"
+              placeholder="https://www.youtube.com"
+            />
+            <a href="#">Remove</a>
 
+            <br />
+            <a href="#">
+              <input
+                type="button"
+                id="edit-profile-add-another-link"
+                value="Add another link"
+              /> </a
+            ><br />
 
+            <a href="#">
+              <input type="button" id="edit-profile-cancel" value="Cancel"
+            /></a>
 
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</body>
+            <a href="index.html">
+              <input
+                type="button"
+                id="edit-profile-save-profile"
+                value="Save Profile" /></a
+            ><br />
 
+            <a href="#"
+              ><input
+                type="button"
+                id="edit-profile-edit-profile"
+                value="Edit Profile"
+            /></a>
+
+            <a href="index.html"
+              ><input
+                type="button"
+                id="edit-profile-cancel-editing"
+                value="Cancel Editing"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
