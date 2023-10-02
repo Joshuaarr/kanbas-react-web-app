@@ -69,6 +69,26 @@ td {
   padding-bottom: 100px;
   padding-left: 100px;
 }
+
 .wd-kanbas.ml-25 {
   margin-left: 25px;
+}
+
+.wd-kanbas.square {
+  width: 248px;
+  height: 160px;
+}
+
+.wd-kanbas.card-container {
+  max-width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-right: 30px;
+  gap: 30px;
+}
+
+.wd-kanbas.card-size {
+  width: 250px;
+  height: 350px;
 }
