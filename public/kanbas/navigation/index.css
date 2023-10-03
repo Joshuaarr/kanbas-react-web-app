@@ -97,6 +97,16 @@ td {
   height: 350px;
 }
 
-.select {
-  font-family: "FontAwesome", "sans-serif";
+.wd-kanbas.course-status {
+  width: 280px;
+  height: 40px;
+  color: black;
+  border: none;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.wd-kanbas.black-banner {
+  background-color: black;
+  color: white;
 }
