@@ -1,155 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Edit Assignment</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <table valign="top" width="100%">
-        <tbody>
-            <tr valign="top">
-                <!--Kanbas Navigation Side Bar-->
-                <td>
-                    <ul>
-                        <li><a href="../account.html">Account</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="../courses.html">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                </td>
-                <!--Course Navigation Side Bar-->
-                <td>
-                    <ul>
-                        <li><a href="../home.html">Home</a></li>
-                        <li><a href="#">Modules</a></li>
-                        <li><a href="#">Piazza</a></li>
-                        <li><a href="#">Zoom Meeting</a></li>
-                        <li><a href="index.html">Assignments</a></li>
-                        <li><a href="#">Quizzes</a></li>
-                        <li><a href="../grade.html">Grades</a></li>
-                        <li><a href="#">People</a></li>
-                        <li><a href="#">Panopto Video</a></li>
-                        <li><a href="#">Discussions</a></li>
-                        <li><a href="#">Announcements</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Rubrics</a></li>
-                        <li><a href="#">Outcomes</a></li>
-                        <li><a href="#">Collaborations</a></li>
-                        <li><a href="#">Syllabus</a></li>
-                        <li><a href="#">Settings</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <select id="select-edit-assignment">
-                        <option value="edit-assignment">Edit</option>
-                        <option selected value="edit-assignment">Speed Grader</option>
-                        <option value="edit-assignment">Duplicate</option>
-                        <option value="edit-assignment">Delete</option>
-                        <option value="edit-assignment">Move To...</option>
-                        <option value="edit-assignment">Send To...</option>
-                        <option value="edit-assignment">Copy To...</option>
-                        <option value="edit-assignment">Share to Commons</option>
-                    </select>
-                    <hr width="300" align="left" />
-                    <h3>Assignment Name</h3>
-                    <input id="text-fields-assignment-name" placeholder="A1 - ENV + HTML" /><br />
-                    <br />
-                    <form id="text-fields-assignment-description">
-                        <textarea cols="20"
-                            rows="2">This is the assignment description.</textarea>
-                    </form><br />
-                    <label for="text-fields-assignment-points">Points</label><br />
-                    <input id="text-fields-assignment-points" placeholder="100" /><br />
-                    <br />
+      <tbody>
+        <tr valign="top">
+          <!--Kanbas Navigation Side Bar-->
+          <td>
+            <ul>
+              <li><a href="../account.html">Account</a></li>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="../courses.html">Courses</a></li>
+              <li><a href="#">Calendar</a></li>
+              <li><a href="#">Inbox</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Studio</a></li>
+              <li><a href="#">Commons</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </td>
+          <!--Course Navigation Side Bar-->
+          <td>
+            <ul>
+              <li><a href="../home.html">Home</a></li>
+              <li><a href="#">Modules</a></li>
+              <li><a href="#">Piazza</a></li>
+              <li><a href="#">Zoom Meeting</a></li>
+              <li><a href="index.html">Assignments</a></li>
+              <li><a href="#">Quizzes</a></li>
+              <li><a href="../grade.html">Grades</a></li>
+              <li><a href="#">People</a></li>
+              <li><a href="#">Panopto Video</a></li>
+              <li><a href="#">Discussions</a></li>
+              <li><a href="#">Announcements</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Files</a></li>
+              <li><a href="#">Rubrics</a></li>
+              <li><a href="#">Outcomes</a></li>
+              <li><a href="#">Collaborations</a></li>
+              <li><a href="#">Syllabus</a></li>
+              <li><a href="#">Settings</a></li>
+            </ul>
+          </td>
+          <td>
+            <select id="select-edit-assignment">
+              <option value="edit-assignment">Edit</option>
+              <option selected value="edit-assignment">Speed Grader</option>
+              <option value="edit-assignment">Duplicate</option>
+              <option value="edit-assignment">Delete</option>
+              <option value="edit-assignment">Move To...</option>
+              <option value="edit-assignment">Send To...</option>
+              <option value="edit-assignment">Copy To...</option>
+              <option value="edit-assignment">Share to Commons</option>
+            </select>
+            <hr width="300" align="left" />
+            <h3>Assignment Name</h3>
+            <input
+              id="text-fields-assignment-name"
+              placeholder="A1 - ENV + HTML"
+            /><br />
+            <br />
+            <form id="text-fields-assignment-description">
+              <textarea cols="20" rows="2">
+This is the assignment description.</textarea
+              >
+            </form>
+            <br />
+            <label for="text-fields-assignment-points">Points</label><br />
+            <input id="text-fields-assignment-points" placeholder="100" /><br />
+            <br />
 
-                    <label for="text-fields-assignment-group">Assignment Group</label><br />
-                    <select id="text-fields-assignment-group">
-                        <option selected value="assignments">ASSIGNMENTS</option>
-                    </select><br />
-                    <br />
-                    <label for="text-fields-assignment-display-grade">Display Grade as</label><br />
-                    <select id="text-fields-assignment-display-grade">
-                        <option selected value="percentage">Percentage</option>
-                    </select>
-                    <br />
-                    <br />
-                    <label for="text-fields-assignment-submission-type">Submission Type</label><br />
-                    <select id="text-fields-assignment-submission-type">
-                        <option selected value="online">Online</option>
-                    </select><br />
-                    <br />
+            <label for="text-fields-assignment-group">Assignment Group</label
+            ><br />
+            <select id="text-fields-assignment-group">
+              <option selected value="assignments">ASSIGNMENTS</option></select
+            ><br />
+            <br />
+            <label for="text-fields-assignment-display-grade"
+              >Display Grade as</label
+            ><br />
+            <select id="text-fields-assignment-display-grade">
+              <option selected value="percentage">Percentage</option>
+            </select>
+            <br />
+            <br />
+            <label for="text-fields-assignment-submission-type"
+              >Submission Type</label
+            ><br />
+            <select id="text-fields-assignment-submission-type">
+              <option selected value="online">Online</option></select
+            ><br />
+            <br />
 
+            <label for="checkbox-online-entry-option"
+              >Online Entry Options</label
+            ><br />
+            <input
+              type="checkbox"
+              value="text-entry"
+              name="check-online-option"
+              id="checkbox-text-entry"
+            />
+            <label for="checkbox-text-entry">Text Entry</label> <br />
 
-                    <label for="checkbox-online-entry-option">Online Entry Options</label><br />
-                    <input type="checkbox" value="text-entry" name="check-online-option" id="checkbox-text-entry"/>
-                    <label for="checkbox-text-entry">Text Entry</label> <br />
+            <input
+              type="checkbox"
+              value="website-url"
+              name="check-online-option"
+              id="checkbox-website-url"
+            />
+            <label for="checkbox-website-url">Website URL</label> <br />
 
-                    <input type="checkbox" value="website-url" name="check-online-option" id="checkbox-website-url" />
-                    <label for="checkbox-website-url">Website URL</label> <br />
+            <input
+              type="checkbox"
+              value="media-recordings"
+              name="check-online-option"
+              id="checkbox-media-recordings"
+            />
+            <label for="checkbox-media-recordings">Media Recordings</label>
+            <br />
 
-                    <input type="checkbox" value="media-recordings" name="check-online-option" id="checkbox-media-recordings" />
-                    <label for="checkbox-media-recordings">Media Recordings</label> <br />
+            <input
+              type="checkbox"
+              value="student-annotation"
+              name="check-online-option"
+              id="checkbox-student-annotation"
+            />
+            <label for="checkbox-student-annotation">Student Annotation</label>
+            <br />
 
-                    <input type="checkbox" value="student-annotation" name="check-online-option" id="checkbox-student-annotation" />
-                    <label for="checkbox-student-annotation">Student Annotation</label> <br />
+            <input
+              type="checkbox"
+              value="file-uplaods"
+              name="check-online-option"
+              id="checkbox-file-uplaods"
+            />
+            <label for="checkbox-file-uplaods">File Uplaods</label> <br />
+            <br />
 
-                    <input type="checkbox" value="file-uplaods" name="check-online-option" id="checkbox-file-uplaods" />
-                    <label for="checkbox-file-uplaods">File Uplaods</label> <br />
-                    <br />
+            <label for="text-fields-assignment-submission-attempts"
+              >Submission Attempts</label
+            ><br />
+            <select id="text-fields-assignment-submission-attempts">
+              <option selected value="unlimitted">Unlimitted</option></select
+            ><br />
+            <br />
 
-                    <label for="text-fields-assignment-submission-attempts">Submission Attempts</label><br />
-                    <select id="text-fields-assignment-submission-attempts">
-                        <option selected value="unlimitted">Unlimitted</option>
-                    </select><br />
-                    <br />
+            <label for="text-fields-assignment-plagiarism-review"
+              >Plagiarism Review</label
+            ><br />
+            <select id="text-fields-assignment-plagiarism-review">
+              <option selected value="none">None</option></select
+            ><br />
+            <br />
 
-                    <label for="text-fields-assignment-plagiarism-review">Plagiarism Review</label><br />
-                    <select id="text-fields-assignment-plagiarism-review">
-                        <option selected value="none">None</option>
-                    </select><br />
-                    <br />
+            <label for="check-group-assignment">Group Assignments</label><br />
+            <input
+              type="checkbox"
+              value="group-assignment-required"
+              name="check-group-assignment-required"
+              id="checkbox-group-assignment"
+            />
+            <label for="check-group-assignment-required"
+              >This is a group assignment</label
+            ><br />
+            <br />
 
-                    <label for="check-group-assignment">Group Assignments</label><br />
-                    <input type="checkbox" value="group-assignment-required" name="check-group-assignment-required" id="checkbox-group-assignment" />  
-                    <label for="check-group-assignment-required">This is a group assignment</label><br />
-                    <br />
+            <label for="check-peer-review">Peer Reviews</label><br />
+            <input
+              type="checkbox"
+              value="peer-review-required"
+              name="check-peer-review-required"
+              id="checkbox-peer-review"
+            />
+            <label for="check-group-peer-review">Required Peer Reviews</label
+            ><br />
 
-                    <label for="check-peer-review">Peer Reviews</label><br />
-                    <input type="checkbox" value="peer-review-required" name="check-peer-review-required" id="checkbox-peer-review" />
-                    <label for="check-group-peer-review">Required Peer Reviews</label><br />
+            <br />
+            <label for="text-fields-assignment-assign-to">Assign</label><br />
+            Assign to<br />
+            <input
+              id="text-fields-assignment-assign-to"
+              placeholder="Everyone"
+            /><br />
+            <br />
 
-                    <br />
-                    <label for="text-fields-assignment-assign-to">Assign</label><br />
-                    Assign to<br />
-                    <input id="text-fields-assignment-assign-to" placeholder="Everyone" /><br />
-                    <br />
+            <label for="text-fields-assignment-due">Due</label><br />
+            <input
+              type="date"
+              id="text-fields-assignment-due"
+              value="2021-01-01"
+            /><br />
+            <br />
 
-                    <label for="text-fields-assignment-due">Due</label><br />
-                    <input type="date" id="text-fields-assignment-due" value="2021-01-01" /><br />
-                    <br />
+            <label for="text-fields-assignment-available-from"
+              >Available from</label
+            ><br />
+            <input
+              type="date"
+              id="text-fields-assignment-available-from"
+              value="2021-01-01"
+            /><br />
+            <br />
 
-                    <label for="text-fields-assignment-available-from">Available from</label><br />
-                    <input type="date" id="text-fields-assignment-available-from" value="2021-01-01" /><br />
-                    <br />
+            <label for="text-fields-assignment-until">Until</label><br />
+            <input
+              type="date"
+              id="text-fields-assignment-until"
+              value="2021-01-01"
+            /><br />
 
-                    <label for="text-fields-assignment-until">Until</label><br />
-                    <input type="date" id="text-fields-assignment-until" value="2021-01-01" /><br />
-
-                    <a href="index.html"><input type="button" value="Cancel"/></a>
-                    <a href="index.html"><input type="button" value="Save" /></a>
-                    
-                </td>
-            </tr>
-        </tbody>
-    </table>     
-</body>
-                
+            <a href="index.html"><input type="button" value="Cancel" /></a>
+            <a href="index.html"><input type="button" value="Save" /></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>

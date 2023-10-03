@@ -1,181 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Assignment Home</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Assignment Home</title>
-    </head>
+  <body>
+    <table valign="top" width="100%">
+      <tbody>
+        <tr valign="top">
+          <!--Kanbas Navigation Side Bar-->
+          <td>
+            <ul>
+              <li><a href="../account.html">Account</a></li>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="../courses.html">Courses</a></li>
+              <li><a href="#">Calendar</a></li>
+              <li><a href="#">Inbox</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Studio</a></li>
+              <li><a href="#">Commons</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </td>
+          <!--Course Navigation Side Bar-->
+          <td>
+            <ul>
+              <li><a href="../home.html">Home</a></li>
+              <li><a href="#">Modules</a></li>
+              <li><a href="#">Piazza</a></li>
+              <li><a href="#">Zoom Meeting</a></li>
+              <li><a href="index.html">Assignments</a></li>
+              <li><a href="#">Quizzes</a></li>
+              <li><a href="../grade.html">Grades</a></li>
+              <li><a href="#">People</a></li>
+              <li><a href="#">Panopto Video</a></li>
+              <li><a href="#">Discussions</a></li>
+              <li><a href="#">Announcements</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Files</a></li>
+              <li><a href="#">Rubrics</a></li>
+              <li><a href="#">Outcomes</a></li>
+              <li><a href="#">Collaborations</a></li>
+              <li><a href="#">Syllabus</a></li>
+              <li><a href="#">Settings</a></li>
+            </ul>
+          </td>
+          <td>
+            <input
+              placeholder="Search for Assignments"
+              id="text-fields-search-assignments"
+            />
+            <button type="button">Group</button>
+            <button type="button">Assignment</button>
+            <select id="select-edit-assignment-dates">
+              <option value="edit-assignment-dates">
+                Edit Assignment Dates
+              </option>
+            </select>
+            <h3>
+              ASSIGNMENTS 40% of Total
+              <select id="select-edit-assignment">
+                <option value="edit-assignment">Edit</option>
+                <option value="edit-assignment">Speed Grader</option>
+                <option value="edit-assignment">Duplicate</option>
+                <option value="edit-assignment">Delete</option>
+                <option value="edit-assignment">Move To...</option>
+                <option value="edit-assignment">Send To...</option>
+                <option value="edit-assignment">Copy To...</option>
+                <option value="edit-assignment">Share to Commons</option>
+              </select>
+            </h3>
+            <ul>
+              <li>
+                <a href="edit.html">A1 - ENV + HTML</a><br />
+                <a href="#">Multiple Modules</a> | Not Available yet<br />
+              </li>
+              <li>
+                <a href="edit.html">A2 - CSS + BOOTSTRAP</a><br />
+                <a href="#">Multiple Modules</a> | Not Available yet
+              </li>
+              <li>
+                <a href="edit.html">A3 - JS + REACT</a><br />
+                <a href="#">Multiple Modules</a> | Not Available yet
+              </li>
+              <li>
+                <a href="edit.html">A4 - STATE + REDUX</a><br />
+                <a href="#">Multiple Modules</a> | Not Available yet
+              </li>
+              <li>
+                <a href="edit.html">A5 NODE + SESSION</a><br />
+                <a href="#">Multiple Modules</a> | Not Available yet
+              </li>
+              <li>
+                <a href="edit.html">A6 - MONGO + MONGOOSE</a><br />
+                <a href="#">Multiple Modules</a> | Not Available yet
+              </li>
+            </ul>
 
-    <body>
-        <table valign="top" width="100%">
-            <tbody>
-                <tr valign="top">
-                    <!--Kanbas Navigation Side Bar-->
-                    <td>
-                        <ul>
-                            <li><a href="../account.html">Account</a></li>
-                            <li><a href="#">Dashboard</a></li>
-                            <li><a href="../courses.html">Courses</a></li>
-                            <li><a href="#">Calendar</a></li>
-                            <li><a href="#">Inbox</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Studio</a></li>
-                            <li><a href="#">Commons</a></li>
-                            <li><a href="#">Help</a></li>
-                        </ul>
-                    </td>
-                    <!--Course Navigation Side Bar-->
-                    <td>
-                        <ul>
-                            <li><a href="../home.html">Home</a></li>
-                            <li><a href="#">Modules</a></li>
-                            <li><a href="#">Piazza</a></li>
-                            <li><a href="#">Zoom Meeting</a></li>
-                            <li><a href="index.html">Assignments</a></li>
-                            <li><a href="#">Quizzes</a></li>
-                            <li><a href="../grade.html">Grades</a></li>
-                            <li><a href="#">People</a></li>
-                            <li><a href="#">Panopto Video</a></li>
-                            <li><a href="#">Discussions</a></li>
-                            <li><a href="#">Announcements</a></li>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Files</a></li>
-                            <li><a href="#">Rubrics</a></li>
-                            <li><a href="#">Outcomes</a></li>
-                            <li><a href="#">Collaborations</a></li>
-                            <li><a href="#">Syllabus</a></li>
-                            <li><a href="#">Settings</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                    <input placeholder="Search for Assignments" id="text-fields-search-assignments"/>
-                    <button type="button">Group</button>
-                    <button type="button">Assignment</button>
-                    <select id="select-edit-assignment-dates">
-                        <option value="edit-assignment-dates">Edit Assignment Dates</option>
-                    </select>
-                    <h3>
-                        ASSIGNMENTS 40% of Total
-                    <select id="select-edit-assignment">
-                        <option value="edit-assignment">Edit</option>
-                        <option value="edit-assignment">Speed Grader</option>
-                        <option value="edit-assignment">Duplicate</option>
-                        <option value="edit-assignment">Delete</option>
-                        <option value="edit-assignment">Move To...</option>
-                        <option value="edit-assignment">Send To...</option>
-                        <option value="edit-assignment">Copy To...</option>
-                        <option value="edit-assignment">Share to Commons</option>
-                    </select>
-                    </h3>
-                    <ul>
-                        <li>
-                            <a href="edit.html">A1 - ENV + HTML</a><br />
-                            <a href="#">Multiple Modules</a> | Not Available yet<br />
-                        </li>
-                        <li>
-                            <a href="edit.html">A2 - CSS + BOOTSTRAP</a><br />
-                            <a href="#">Multiple Modules</a> | Not Available yet
-                        </li>
-                        <li>
-                            <a href="edit.html">A3 - JS + REACT</a><br />
-                            <a href="#">Multiple Modules</a> | Not Available yet
-                        </li>
-                        <li>
-                            <a href="edit.html">A4 - STATE + REDUX</a><br />
-                            <a href="#">Multiple Modules</a> | Not Available yet
-                        </li>
-                        <li>
-                            <a href="edit.html">A5 NODE + SESSION</a><br />
-                            <a href="#">Multiple Modules</a> | Not Available yet
-                        </li>
-                        <li>
-                            <a href="edit.html">A6 - MONGO + MONGOOSE</a><br />
-                            <a href="#">Multiple Modules</a> | Not Available yet
-                        </li>
-                    </ul>
+            <h3>
+              QUIZZES 10% of Total
+              <select id="select-edit-assignment">
+                <option value="edit-assignment">Edit</option>
+                <option value="edit-assignment">Speed Grader</option>
+                <option value="edit-assignment">Duplicate</option>
+                <option value="edit-assignment">Delete</option>
+                <option value="edit-assignment">Move To...</option>
+                <option value="edit-assignment">Send To...</option>
+                <option value="edit-assignment">Copy To...</option>
+                <option value="edit-assignment">Share to Commons</option>
+              </select>
+            </h3>
+            <ul>
+              <li>
+                <a href="edit.html">Q1 - HTML</a><br />
+                <a href="#">Multiple Modules</a> | Not Available yet
+              </li>
+              <li>
+                <a href="edit.html">Q2 - CSS</a><br />
+                <a href="#">Multiple Modules</a> | Not Available yet
+              </li>
+              <li>
+                <a href="#">Q3 - JS, ES6</a><br />
+                <a href="#">Multiple Modules</a> | Not Available yet
+              </li>
+              <li>
+                <a href="edit.html">Q4 - NODE</a><br />
+                <a href="#">Multiple Modules</a> | Not Available yet
+              </li>
+              <li>
+                <a href="edit.html">Q5 - MONGO</a><br />
+                <a href="#">Multiple Modules</a> | Not Available yet
+              </li>
+            </ul>
+            <h3>
+              EXAMS 20% of Total
+              <select id="select-edit-assignment">
+                <option value="edit-assignment">Edit</option>
+                <option value="edit-assignment">Speed Grader</option>
+                <option value="edit-assignment">Duplicate</option>
+                <option value="edit-assignment">Delete</option>
+                <option value="edit-assignment">Move To...</option>
+                <option value="edit-assignment">Send To...</option>
+                <option value="edit-assignment">Copy To...</option>
+                <option value="edit-assignment">Share to Commons</option>
+              </select>
+            </h3>
+            <ul>
+              <li>
+                <a href="edit.html">Midterm</a><br />
+                <a href="#">Multiple Modules</a> | Not Available yet
+              </li>
+              <li>
+                <a href="edit.html">Final</a><br />
+                <a href="#">Multiple Modules</a> | Not Available yet
+              </li>
+            </ul>
 
-                    <h3>
-                        QUIZZES 10% of Total
-                        <select id="select-edit-assignment">
-                            <option value="edit-assignment">Edit</option>
-                            <option value="edit-assignment">Speed Grader</option>
-                            <option value="edit-assignment">Duplicate</option>
-                            <option value="edit-assignment">Delete</option>
-                            <option value="edit-assignment">Move To...</option>
-                            <option value="edit-assignment">Send To...</option>
-                            <option value="edit-assignment">Copy To...</option>
-                            <option value="edit-assignment">Share to Commons</option>
-                        </select>
-                    </h3>
-                    <ul>
-                        <li>
-                            <a href="edit.html">Q1 - HTML</a><br />
-                            <a href="#">Multiple Modules</a> | Not Available yet
-                        </li>
-                        <li>
-                            <a href="edit.html">Q2 - CSS</a><br />
-                            <a href="#">Multiple Modules</a> | Not Available yet
-                        </li>
-                        <li>
-                            <a href="#">Q3 - JS, ES6</a><br />
-                            <a href="#">Multiple Modules</a> | Not Available yet
-                        </li>
-                        <li>
-                            <a href="edit.html">Q4 - NODE</a><br />
-                            <a href="#">Multiple Modules</a> | Not Available yet
-                        </li>
-                        <li>
-                            <a href="edit.html">Q5 - MONGO</a><br />
-                            <a href="#">Multiple Modules</a> | Not Available yet
-                        </li>
-                    </ul>
-                    <h3>
-                        EXAMS 20% of Total
-                        <select id="select-edit-assignment">
-                            <option value="edit-assignment">Edit</option>
-                            <option value="edit-assignment">Speed Grader</option>
-                            <option value="edit-assignment">Duplicate</option>
-                            <option value="edit-assignment">Delete</option>
-                            <option value="edit-assignment">Move To...</option>
-                            <option value="edit-assignment">Send To...</option>
-                            <option value="edit-assignment">Copy To...</option>
-                            <option value="edit-assignment">Share to Commons</option>
-                        </select>
-                    </h3>
-                    <ul>
-                        <li>
-                            <a href="edit.html">Midterm</a><br />
-                            <a href="#">Multiple Modules</a> | Not Available yet
-                        </li>
-                        <li>
-                            <a href="edit.html">Final</a><br />
-                            <a href="#">Multiple Modules</a> | Not Available yet
-                        </li>
-                    </ul>
-
-                    <h3>
-                        PROJECT 30% of Total
-                        <select id="select-edit-assignment">
-                            <option value="edit-assignment">Edit</option>
-                            <option value="edit-assignment">Speed Grader</option>
-                            <option value="edit-assignment">Duplicate</option>
-                            <option value="edit-assignment">Delete</option>
-                            <option value="edit-assignment">Move To...</option>
-                            <option value="edit-assignment">Send To...</option>
-                            <option value="edit-assignment">Copy To...</option>
-                            <option value="edit-assignment">Share to Commons</option>
-                        </select>
-                    </h3>
-                    <ul>
-                    <li>
-                        <a href="edit.html">Project</a><br />
-                        <a href="#">Multiple Modules</a> | Not Available yet
-                    </li>
-                    </ul>
-            
-                    </td>
-            </tbody>
-        </table>
-    </body>
-
+            <h3>
+              PROJECT 30% of Total
+              <select id="select-edit-assignment">
+                <option value="edit-assignment">Edit</option>
+                <option value="edit-assignment">Speed Grader</option>
+                <option value="edit-assignment">Duplicate</option>
+                <option value="edit-assignment">Delete</option>
+                <option value="edit-assignment">Move To...</option>
+                <option value="edit-assignment">Send To...</option>
+                <option value="edit-assignment">Copy To...</option>
+                <option value="edit-assignment">Share to Commons</option>
+              </select>
+            </h3>
+            <ul>
+              <li>
+                <a href="edit.html">Project</a><br />
+                <a href="#">Multiple Modules</a> | Not Available yet
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>

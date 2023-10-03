@@ -36,6 +36,10 @@
   width: 85px;
 }
 
+.wd-width-600px {
+  width: 600px;
+}
+
 td {
   padding: 0px;
 }
@@ -91,4 +95,8 @@ td {
 .wd-kanbas.card-size {
   width: 250px;
   height: 350px;
+}
+
+.select {
+  font-family: "FontAwesome", "sans-serif";
 }
