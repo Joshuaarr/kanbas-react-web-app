@@ -193,7 +193,8 @@
                     </select>
                   </div>
                   <div class="ps-3">
-                    <label for="checkbox-online-entry-option" class="form-label pt-1"><strong>Online Entry Options</strong> 
+                    <label for="checkbox-online-entry-option" class="form-label pt-1"><strong>Online Entry
+                        Options</strong>
                     </label>
                     <div class="form-check pt-2">
                       <input class="form-check-input" type="checkbox" id="checkbox-text-entry" />
@@ -225,51 +226,81 @@
               </div>
               <div class="col-9">
                 <div class="card">
-                  <div class="card-body pe-5">
-
+                  <div class="card-body">
+                    <label for="text-fields-assignment-assign-to" class="form-label pt-1"><strong>Assign</strong>
+                    </label>
+                    <input type="name" class="form-control pb-2" id="text-fields-assignment-assign-to"
+                      value="Everyone" />
+                    <div class="form-group pt-1">
+                      <label for="text-fields-assignment-assign-due" class="form-label pt-1"><strong>Due</strong>
+                      </label>
+                      <input type="text" class="form-control" id="text-fields-assignment-assign-due" name="datetime" placeholder="09-18-2023, 11:59PM" required>
+                    </div>
                     
+                    <div class="row pt-1">
+                      <div class="col-6">
+                        <label for="text-fields-assignment-assign-availible-from" class="form-label pt-1"><strong>Availible from</strong>
+                      </label>
+                      <input type="text" class="form-control" id="text-fields-assignment-assign-availible-from" name="datetime" placeholder="09-18-2023, 11:59PM" required>
+                      </div>
+                      <div class="col-6">
+                        <label for="text-fields-assignment-assign-until" class="form-label pt-1"><strong>Until</strong>
+                      </label>
+                      <input type="text" class="form-control" id="text-fields-assignment-assign-until" name="datetime" placeholder="09-18-2023, 11:59PM" required>
+                        
+                      </div>
+                    </div>
+
+
+
+
                   </div>
+                  <a href="#" style="color: black; text-decoration: none; display: flex; align-items: center;">
+                    <div class="card-body "
+                      style="height: 50px;  background-color: rgb(200, 200, 200); text-align: center">
+                      <i class="fas fa-plus"></i>
+                      Add
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
+          <hr />
+          <div class="form-check pb-3">
+            <input class="form-check-input" type="checkbox" id="checkbox-file-uplaods" />
+            <label class="form-check-label" for="checkbox-file-uplaods"> Notify users that this content has
+              changed</label>
+            <div class="float-end">
+              <a href="index.html" class="p-1" style="text-decoration: none">
+                <button class="btn btn-primary" style="
+                    background-color: rgb(190, 188, 188);
+                    color: black;
+                    border: none;
+                    text-decoration: none;
+                  ">
+                  Cancel
+                </button>
+              </a>
+              <a href="index.html" class="p-1" style="text-decoration: none">
+                <button class="btn btn-primary" style="
+                    background-color: rgb(200, 53, 53);
+                    color: white;
+                    border: none;
+                    text-decoration: none;
+                  ">
+                  Save
+                </button>
+              </a>
+            </div>
+          </div>
+          <hr />
         </div>
       </div>
     </div>
   </div>
   </div>
   <script src="../vendors/bootstrap/js/bootstrap.bundle.js"></script>
-</body>
-
-</html>
-
-
-
-
-
-<br />
-<label for="text-fields-assignment-assign-to">Assign</label><br />
-Assign to<br />
-<input id="text-fields-assignment-assign-to" placeholder="Everyone" /><br />
-<br />
-
-<label for="text-fields-assignment-due">Due</label><br />
-<input type="date" id="text-fields-assignment-due" value="2021-01-01" /><br />
-<br />
-
-<label for="text-fields-assignment-available-from">Available from</label><br />
-<input type="date" id="text-fields-assignment-available-from" value="2021-01-01" /><br />
-<br />
-
-<label for="text-fields-assignment-until">Until</label><br />
-<input type="date" id="text-fields-assignment-until" value="2021-01-01" /><br />
-
-<a href="index.html"><input type="button" value="Cancel" /></a>
-<a href="index.html"><input type="button" value="Save" /></a>
-</td>
-</tr>
-</tbody>
-</table>
 </body>
 
 </html>
