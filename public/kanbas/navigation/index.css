@@ -62,6 +62,7 @@ td {
 .wd-kanbas.list-group > .list-group-item.white.active {
   color: black;
   border-left: black solid;
+  border-width: 3px;
 }
 
 .wd-kanbas.link-to {
