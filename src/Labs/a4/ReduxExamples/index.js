@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import HelloRedux from "./HelloRedux";
 import CounterRedux from "./CounterRedux";
 import AddRedux from "./AddRedux";
+import TodoList from "./Todos/TodoList";
 
 const ReduxExamples = () => {
   const helloState = useSelector((state) => state.helloReducer);
@@ -12,6 +13,7 @@ const ReduxExamples = () => {
       <HelloRedux />
       <CounterRedux />
       <AddRedux />
+      <TodoList />
     </div>
   );
 };
