@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+
 function WorkingWithObjects() {
   const [assignment, setAssignment] = useState({
     id: 1,
@@ -9,6 +11,17 @@ function WorkingWithObjects() {
     score: 0,
   });
   const URL = "http://localhost:4000/a5/assignment";
+  const fetchAssignment = async () => {
+    const response = await axios.get(`${URL}`);
+    setAssignment(response.data);
+  };
+  const updateTitle = async () => {
+    const response = await axios.get(`${URL}/title/${assignment.title}`);
+    setAssignment(response.data);
+  };
+  useEffect(() => {
+    fetchAssignment();
+  }, []);
 
   return (
     <div>
@@ -73,6 +86,13 @@ function WorkingWithObjects() {
       >
         Get Title
       </a>
+
+      <button onClick={updateTitle} className="w-100 btn btn-primary mb-2 mt-2">
+        Update Title to: {assignment.title}
+      </button>
+      <button onClick={fetchAssignment} className="w-100 btn btn-danger mb-2">
+        Fetch Assignment
+      </button>
     </div>
   );
 }
