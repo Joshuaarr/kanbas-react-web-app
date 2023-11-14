@@ -118,7 +118,7 @@ function Dashboard({
                         }}
                         onClick={(event) => {
                           event.preventDefault();
-                          deleteCourse(course._id);
+                          deleteCourse(course);
                         }}
                       >
                         Delete

@@ -40,7 +40,7 @@ function KanbasNavigation() {
     <div className="list-group wd-kanbas-navigation" style={{ width: 80 }}>
       <a
         href="https://www.northeastern.edu/"
-        class="list-group-item fs-1 text-danger"
+        className="list-group-item fs-1 text-danger"
       >
         <h2>N</h2>
       </a>

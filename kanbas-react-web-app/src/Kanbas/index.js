@@ -26,23 +26,23 @@ function Kanbas() {
     findAllCourses();
   }, []);
 
-  const addNewCourse = () => {
-    setCourses([
-      ...courses,
-      { ...course, _id: new Date().getTime().toString() },
-    ]);
+  const addNewCourse = async () => {
+    const response = await axios.post(URL, course);
+    setCourses([response.data, ...courses]);
   };
-  const deleteCourse = (courseId) => {
-    setCourses(courses.filter((course) => course._id !== courseId));
+  const deleteCourse = async (course) => {
+    const response = await axios.delete(`${URL}/${course._id}`);
+    setCourses(courses.filter((c) => c._id !== course._id));
   };
-  const updateCourse = () => {
+
+  const updateCourse = async () => {
+    const response = await axios.put(`${URL}/${course._id}`, course);
     setCourses(
       courses.map((c) => {
         if (c._id === course._id) {
-          return course;
-        } else {
-          return c;
+          return response.data;
         }
+        return c;
       })
     );
   };
