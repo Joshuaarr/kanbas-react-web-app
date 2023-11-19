@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-//import db from "../../Database";
 import "bootstrap/dist/css/bootstrap.css";
 import * as client from "./client";
 import { FaBars, FaCheckCircle, FaPlus, FaEllipsisV } from "react-icons/fa";
