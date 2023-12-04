@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
 import "bootstrap/dist/css/bootstrap.css";
 import { FaBars, FaCheckCircle, FaPlus, FaEllipsisV } from "react-icons/fa";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addModule,
+  deleteModule,
+  updateModule,
+  setModule,
+} from "./modulesReducer";
 
 function ModuleList() {
   const { courseId } = useParams();
-  const modules = db.modules;
+  const modules = useSelector((state) => state.modulesReducer.modules);
+  const module = useSelector((state) => state.modulesReducer.module);
+  const dispatch = useDispatch();
+
   return (
     <ul className="list-group pe-5">
       <div className="pb-3">
@@ -64,6 +74,58 @@ function ModuleList() {
       </div>
 
       <ul className="list-group">
+        <li className="list-group-item">
+          <div className="d-flex align-items-center pt-1 pb-1">
+            <input
+              className="form-control"
+              value={module.name}
+              style={{
+                width: "400px",
+              }}
+              onChange={(e) =>
+                dispatch(setModule({ ...module, name: e.target.value }))
+              }
+            />
+            <div className="ms-auto">
+              <button
+                className="btn btn-primary"
+                style={{
+                  border: "none",
+                  color: "white",
+                  padding: "5px 10px",
+                }}
+                onClick={() => dispatch(updateModule(module))}
+              >
+                Update
+              </button>
+              <button
+                className="btn btn-primary ms-2"
+                style={{
+                  backgroundColor: "green",
+                  border: "none",
+                  color: "white",
+                  padding: "5px 10px",
+                }}
+                onClick={() =>
+                  dispatch(addModule({ ...module, course: courseId }))
+                }
+              >
+                Add
+              </button>
+            </div>
+          </div>
+          <textarea
+            value={module.description}
+            className="form-control"
+            style={{
+              width: "400px",
+            }}
+            onChange={(e) =>
+              dispatch(setModule({ ...module, description: e.target.value }))
+            }
+          />
+        </li>
+
         {modules
           .filter((module) => module.course === courseId)
           .map((module, index) => (
@@ -76,6 +138,31 @@ function ModuleList() {
                 <FaBars className="me-2" />
                 <h3>{module.name}</h3>
                 <div className="ms-auto">
+                  <button
+                    className="btn btn-primary ms-2"
+                    style={{
+                      backgroundColor: "red",
+                      border: "none",
+                      color: "white",
+                      padding: "5px 10px",
+                    }}
+                    onClick={() => dispatch(deleteModule(module._id))}
+                  >
+                    Delete
+                  </button>
+                  <button
+                    className="btn btn-primary ms-2 me-1"
+                    style={{
+                      backgroundColor: "green",
+                      border: "none",
+                      color: "white",
+                      padding: "5px 10px",
+                    }}
+                    onClick={() => dispatch(setModule(module))}
+                  >
+                    Edit
+                  </button>
+
                   <FaCheckCircle className="me-2 text-success" />
                   <FaPlus className="me-2" />
                   <FaEllipsisV />
